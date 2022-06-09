@@ -1,0 +1,736 @@
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mv unix_tests ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2/
+mv: não foi possível obter estado de 'unix_tests': Arquivo ou diretório inexistente
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mvdir unix_tests ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2
+Comando 'mvdir' não encontrado, você quis dizer:
+  comando 'mmdir' do deb simh (3.8.1-6.1)
+  comando 'mkdir' do deb coreutils (8.32-4.1ubuntu1)
+  comando 'mdir' do deb mtools (4.0.33-1+really4.0.32-1build1)
+  comando 'mvdic' do deb canna-utils (3.7p3-17)
+  comando 'svdir' do deb svtools (0.6-5)
+  comando 'vdir' do deb coreutils (8.32-4.1ubuntu1)
+Experimente: sudo apt install <deb name>
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ mv unix_tests ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ cd..
+cd..: comando não encontrado
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ cd .
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ cd /
+rezende@rezende-System-Product-Name:/$ ls
+bin    dev   lib    libx32      mnt   root  snap      sys  var
+boot   etc   lib32  lost+found  opt   run   srv       tmp
+cdrom  home  lib64  media       proc  sbin  swapfile  usr
+rezende@rezende-System-Product-Name:/$ cd home
+rezende@rezende-System-Product-Name:/home$ ls
+rezende
+rezende@rezende-System-Product-Name:/home$ cd rezende
+rezende@rezende-System-Product-Name:~$ ls
+'Área de Trabalho'   Imagens   portfolio-web   trybe-exercicios
+ Documentos          Modelos   Público         Vídeos
+ Downloads           Música    snap
+rezende@rezende-System-Product-Name:~$ mv unix_tests ~/rezende/
+mv: não foi possível obter estado de 'unix_tests': Arquivo ou diretório inexistente
+rezende@rezende-System-Product-Name:~$ cd trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ ls
+unix_tests
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ mv unix_tests ~/
+Área de Trabalho/          .nvm/
+.bash_history              .pki/
+.bash_logout               portfolio-web/
+.bashrc                    .profile
+.cache/                    Público/
+.config/                   snap/
+Documentos/                .ssh/
+Downloads/                 .sudo_as_admin_successful
+.gitconfig                 .thunderbird/
+Imagens/                   trybe-exercicios/
+.lesshst                   Vídeos/
+.local/                    .vscode/
+Modelos/                   .wget-hsts
+.mozilla/                  .zcompdump
+Música/                    .zsh_history
+.node_repl_history         .zshrc
+.npm/                      
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ mv unix_tests ~/
+Área de Trabalho/          .nvm/
+.bash_history              .pki/
+.bash_logout               portfolio-web/
+.bashrc                    .profile
+.cache/                    Público/
+.config/                   snap/
+Documentos/                .ssh/
+Downloads/                 .sudo_as_admin_successful
+.gitconfig                 .thunderbird/
+Imagens/                   trybe-exercicios/
+.lesshst                   Vídeos/
+.local/                    .vscode/
+Modelos/                   .wget-hsts
+.mozilla/                  .zcompdump
+Música/                    .zsh_history
+.node_repl_history         .zshrc
+.npm/                      
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ mv unix_tests ~/
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ ls
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ cd ~
+rezende@rezende-System-Product-Name:~$ ls
+'Área de Trabalho'   Imagens   portfolio-web   trybe-exercicios
+ Documentos          Modelos   Público         unix_tests
+ Downloads           Música    snap            Vídeos
+rezende@rezende-System-Product-Name:~$ cd unix_tests/
+rezende@rezende-System-Product-Name:~/unix_tests$ ls
+countries.txt  empty.tbt               exercicio.txt
+empty.pdf      exercicios_parte_2.txt  phrases.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ less exercicio.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ mv exercicio.txt ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1
+rezende@rezende-System-Product-Name:~/unix_tests$ ls
+countries.txt  empty.pdf  empty.tbt  exercicios_parte_2.txt  phrases.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ mv exercicios_parte_2.txt ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1
+rezende@rezende-System-Product-Name:~/unix_tests$ ls
+countries.txt  empty.pdf  empty.tbt  phrases.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ cd ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ ls
+exercicios_parte_2.txt  exercicio.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ git branch
+  exercicio/01-03-parte1
+* exercicio/01-03-parte2
+  main
+  teste1
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ git branch -d teste1
+Deleted branch teste1 (was 92c2bd3).
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash$ cd dia-03-unix-bash-parte2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ ls
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git branch
+  exercicio/01-03-parte1
+* exercicio/01-03-parte2
+  main
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git checkout exercicio/01-03-parte1
+D	fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/exercicio.txt
+Switched to branch 'exercicio/01-03-parte1'
+Your branch is up to date with 'origin/exercicio/01-03-parte1'.
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git branch
+* exercicio/01-03-parte1
+  exercicio/01-03-parte2
+  main
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git merge exercicio/01-03-parte2
+Updating 358bcbd..99884a8
+Fast-forward
+ .../unix_tests/countries.txt                       | 196 ++++++++++++++++
+ .../dia-03-unix-bash-parte1/unix_tests/empty.pdf   |   0
+ .../dia-03-unix-bash-parte1/unix_tests/empty.tbt   |   0
+ .../unix_tests/exercicios_parte_2.txt              | 256 +++++++++++++++++++++
+ .../dia-03-unix-bash-parte1/unix_tests/phrases.txt | Bin 0 -> 202 bytes
+ 5 files changed, 452 insertions(+)
+ create mode 100644 fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/countries.txt
+ create mode 100644 fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/empty.pdf
+ create mode 100644 fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/empty.tbt
+ create mode 100644 fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/exercicios_parte_2.txt
+ create mode 100644 fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/phrases.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git branch
+* exercicio/01-03-parte1
+  exercicio/01-03-parte2
+  main
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git branch -d exercicio/01-03-parte2
+Deleted branch exercicio/01-03-parte2 (was 99884a8).
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ git branch
+* exercicio/01-03-parte1
+  main
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte2$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash$ ls
+dia-03-unix-bash-parte1  dia-03-unix-bash-parte2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash$ mv dia-03-unix-bash-parte2 dia-04-unix-bash
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash$ ls
+dia-03-unix-bash-parte1  dia-04-unix-bash
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios$ cd ..
+rezende@rezende-System-Product-Name:~$ cd unix_tests/
+rezende@rezende-System-Product-Name:~/unix_tests$ touch skills2.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ cat >> skills2.txt 
+Internet
+UNix
+rezende@rezende-System-Product-Name:~/unix_tests$ rm skills2.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ cat >> skills2.txt
+Internet
+Unix
+Bash
+rezende@rezende-System-Product-Name:~/unix_tests$ cat >> skills2.txt 
+Javascript 
+Html
+Css
+Python
+Ruby
+rezende@rezende-System-Product-Name:~/unix_tests$ sort skills2.txt;cat skills2.txt 
+Bash
+Css
+Html
+Internet
+Javascript
+Python
+Ruby
+Unix
+Internet
+Unix
+Bash
+Javascript
+Html
+Css
+Python
+Ruby
+rezende@rezende-System-Product-Name:~/unix_tests$ cat skills2.txt 
+Internet
+Unix
+Bash
+Javascript
+Html
+Css
+Python
+Ruby
+rezende@rezende-System-Product-Name:~/unix_tests$ sort;cat skills2.txt 
+
+
+Internet
+Unix
+Bash
+Javascript
+Html
+Css
+Python
+Ruby
+rezende@rezende-System-Product-Name:~/unix_tests$ sort skills2.txt 
+Bash
+Css
+Html
+Internet
+Javascript
+Python
+Ruby
+Unix
+rezende@rezende-System-Product-Name:~/unix_tests$ sort < skills2.txt 
+Bash
+Css
+Html
+Internet
+Javascript
+Python
+Ruby
+Unix
+rezende@rezende-System-Product-Name:~/unix_tests$ cat skills2.txt 
+Internet
+Unix
+Bash
+Javascript
+Html
+Css
+Python
+Ruby
+rezende@rezende-System-Product-Name:~/unix_tests$ wc -l skills2.txt 
+8 skills2.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ cat skills2.txt | wc -l
+8
+rezende@rezende-System-Product-Name:~/unix_tests$ rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unixcat skills2.txt | wc -l
+                                                  rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unixcat skills2.txt | wc -l
+                                                  cat skills2.txt 
+Internet
+Unix
+Bash
+Javascript
+Html
+Css
+Python
+Ruby
+rezende@rezende-System-Product-Name:~/unix_tests$ rezende@rezende-System-Productrezende@rezende-System-Product-Name:~/unix_tests$ zende@rezende-SyName:~/trybe-erezende@rezende-System-Product-Name:~/unix_tests$ Name:~/trybe-exercicios/fundambash: Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente6e83/countries"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1842  100  1842    0     0   3989      0 --:--:-- --:--:-- --:--:--  3995
+bash: fg: %: trabalho não existe   334      0  0:00:05  0:00:05 --:--:--   457
+Comando 'Dload' não encontrado, você quis dizer:cicios/fundamentos/bloco-01-unix  comando 'tload' do deb procps (2:3.3.17-6ubuntu2)
+  comando 'nload' do deb nload (0.7.4-2build3)ercicios/fundamentos/bloco-01-unix  comando 'xload' do deb x11-apps (7.7+8build2)
+Experimente: sudo apt install <deb name>
+0: comando não encontradooduct-Name:~/trybe-exercicios/fundamentos/bloco-01-unix100: comando não encontradorte1/unix_tests$ less countries.txt 
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistentehanistan                                                   
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistenteorra
+countries.txt: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistenteenia
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistenterbaijan
+Afghanistan: comando não encontrado
+Albania: comando não encontrado
+Algeria: comando não encontrado
+Andorra: comando não encontrado
+Angola: comando não encontrado
+[1] 24333
+Deps: comando não encontrado
+Antigua: comando não encontrado
+Argentina: comando não encontrado
+[1]+  Fim da execução com status 127        Antigua
+Armenia: comando não encontrado
+Australia: comando não encontrado
+Austria: comando não encontrado
+Azerbaijan: comando não encontrado
+Bahamas: comando não encontrado
+Bahrain: comando não encontrado
+Bangladesh: comando não encontrado
+Barbados: comando não encontrado
+Belarus: comando não encontrado
+Belgium: comando não encontrado
+Belize: comando não encontrado
+Benin: comando não encontrado
+Bhutan: comando não encontrado
+cComando 'Bolivia' não encontrado, você quis dizer:
+  comando 'olivia' do snap olivia (1.2)
+Veja 'snap info <snapname>' para versões adicionais.
+leBosnia: comando não encontrado
+aBotswana: comando não encontrado
+rBrazil: comando não encontrado
+Brunei: comando não encontrado
+Bulgaria: comando não encontrado
+Burkina: comando não encontrado
+Burundi: comando não encontrado
+Cambodia: comando não encontrado
+Cameroon: comando não encontrado
+Canada: comando não encontrado
+Comando 'Cape' não encontrado, você quis dizer:
+  comando 'tape' do deb node-tape (5.5.2+~cs8.20.16-1)
+Experimente: sudo apt install <deb name>
+Central: comando não encontrado
+Chad: comando não encontrado
+Chile: comando não encontrado
+China: comando não encontrado
+Colombia: comando não encontrado
+Comoros: comando não encontrado
+Congo: comando não encontrado
+Congo: comando não encontrado
+Costa: comando não encontrado
+Croatia: comando não encontrado
+Cuba: comando não encontrado
+Cyprus: comando não encontrado
+Czech: comando não encontrado
+^Z
+[1]+  Parado                  Denmark
+Djibouti: comando não encontrado
+Dominica: comando não encontrado
+Dominican: comando não encontrado
+Comando 'East' não encontrado, você quis dizer:
+  comando 'fast' do snap fast (0.0.4)
+  comando 'last' do deb util-linux (2.37.2-4ubuntu3)
+  comando 'nast' do deb nast (0.2.0-9)
+Veja 'snap info <snapname>' para versões adicionais.
+Ecuador: comando não encontrado
+Egypt: comando não encontrado
+El: comando não encontrado
+Equatorial: comando não encontrado
+Eritrea: comando não encontrado
+Estonia: comando não encontrado
+Ethiopia: comando não encontrado
+Fiji: comando não encontrado
+Finland: comando não encontrado
+France: comando não encontrado
+Gabon: comando não encontrado
+Gambia: comando não encontrado
+Georgia: comando não encontrado
+Germany: comando não encontrado
+Ghana: comando não encontrado
+Greece: comando não encontrado
+Grenada: comando não encontrado
+Guatemala: comando não encontrado
+Guinea: comando não encontrado
+Guinea-Bissau: comando não encontrado
+Guyana: comando não encontrado
+Haiti: comando não encontrado
+Honduras: comando não encontrado
+Hungary: comando não encontrado
+Iceland: comando não encontrado
+India: comando não encontrado
+Indonesia: comando não encontrado
+Comando 'Iran' não encontrado, você quis dizer:
+  comando 'tran' do deb tran (5-3)
+Experimente: sudo apt install <deb name>
+Iraq: comando não encontrado
+Ireland: comando não encontrado
+Israel: comando não encontrado
+Italy: comando não encontrado
+Ivory: comando não encontrado
+^[Jamaica: comando não encontrado
+Japan: comando não encontrado
+^[Jordan: comando não encontrado
+Kazakhstan: comando não encontrado
+^[Kenya: comando não encontrado
+Kiribati: comando não encontrado
+^[Korea: comando não encontrado
+Korea: comando não encontrado
+^[Kosovo: comando não encontrado
+Kuwait: comando não encontrado
+^[Kyrgyzstan: comando não encontrado
+Comando 'Laos' não encontrado, você quis dizer:
+  comando 'xaos' do deb xaos (4.2.1-2)
+Experimente: sudo apt install <deb name>
+^[Latvia: comando não encontrado
+Lebanon: comando não encontrado
+^[Lesotho: comando não encontrado
+Liberia: comando não encontrado
+^[Libya: comando não encontrado
+^[Liechtenstein: comando não encontrado
+Lithuania: comando não encontrado
+^[Luxembourg: comando não encontrado
+Macedonia: comando não encontrado
+^[Madagascar: comando não encontrado
+Malawi: comando não encontrado
+^[Malaysia: comando não encontrado
+Maldives: comando não encontrado
+^[Comando 'Mali' não encontrado, você quis dizer:
+  comando 'tali' do snap tali (40.5)
+  comando 'tali' do deb tali (1:40.6-1)
+  comando 'ali' do deb mailutils-mh (1:3.14-1)
+  comando 'ali' do deb mmh (0.4-4)
+  comando 'ali' do deb nmh (1.7.1-11)
+  comando 'kali' do deb kali (3.1-19)
+Veja 'snap info <snapname>' para versões adicionais.
+Malta: comando não encontrado
+Marshall: comando não encontrado
+Mauritania: comando não encontrado
+Mauritius: comando não encontrado
+Mexico: comando não encontrado
+Micronesia: comando não encontrado
+Moldova: comando não encontrado
+Monaco: comando não encontrado
+Mongolia: comando não encontrado
+Montenegro: comando não encontrado
+Morocco: comando não encontrado
+Mozambique: comando não encontrado
+Myanmar,: comando não encontrado
+Namibia: comando não encontrado
+Nauru: comando não encontrado
+Nepal: comando não encontrado
+Netherlands: comando não encontrado
+^[Comando 'New' não encontrado, você quis dizer:
+  comando 'new' do deb mmh (0.4-4)
+  comando 'new' do deb nmh (1.7.1-11)
+Experimente: sudo apt install <deb name>
+^[Nicaragua: comando não encontrado
+Comando 'Niger' não encontrado, você quis dizer:
+  comando 'tiger' do deb tiger (1:3.2.4~rc1-3)
+Experimente: sudo apt install <deb name>
+^[Nigeria: comando não encontrado
+Norway: comando não encontrado
+Comando 'Oman' não encontrado, você quis dizer:
+  comando 'fman' do snap fman (1.5.7.0)
+  comando 'xman' do deb x11-apps (7.7+8build2)
+  comando 'gman' do deb gman (0.9.3-5.3build1)
+  comando 'pman' do deb pmtools (2.2.0-2)
+  comando 'mman' do deb mandoc (1.14.6-1)
+  comando 'dman' do deb debian-goodies (0.87ubuntu1)
+  comando 'dman' do deb bikeshed (1.78-0ubuntu1)
+  comando 'man' do deb man-db (2.10.2-1)
+  comando 'rman' do deb rman (3.2-9)
+  comando 'hman' do deb man2html (1.6g-14)
+Veja 'snap info <snapname>' para versões adicionais.
+Pakistan: comando não encontrado
+Palau: comando não encontrado
+Panama: comando não encontrado
+Comando 'Papua' não encontrado, você quis dizer:
+  comando 'wapua' do deb wapua (0.06.3-2)
+Experimente: sudo apt install <deb name>
+Paraguay: comando não encontrado
+Peru: comando não encontrado
+Philippines: comando não encontrado
+Comando 'Poland' não encontrado, você quis dizer:
+  comando 'goland' do snap goland (2022.1.2)
+Veja 'snap info <snapname>' para versões adicionais.
+Portugal: comando não encontrado
+Qatar: comando não encontrado
+Romania: comando não encontrado
+Russian: comando não encontrado
+Rwanda: comando não encontrado
+[2] 26420
+St: comando não encontrado
+Nevis: comando não encontrado
+[2]-  Fim da execução com status 127        St Kitts
+St: comando não encontrado
+[2] 26464
+Comando 'the' não encontrado, mas poder ser instalado com:
+sudo apt install the
+Saint: comando não encontrado
+Samoa: comando não encontrado
+[2]-  Fim da execução com status 127        Saint Vincent
+Comando 'San' não encontrado, você quis dizer:
+  comando 'an' do deb an (1.2-6build4)
+  comando 'pan' do deb pan (0.149-1)
+  comando 'dan' do deb emboss (6.6.0+dfsg-11ubuntu1)
+  comando 'man' do deb man-db (2.10.2-1)
+Experimente: sudo apt install <deb name>
+[2] 26522
+Comando 'Sao' não encontrado, você quis dizer:
+  comando 'ao' do snap ao (6.9.0)
+  comando 'tao' do deb taopm (1.0-7)
+Veja 'snap info <snapname>' para versões adicionais.
+Principe: comando não encontrado
+[2]-  Fim da execução com status 127        Sao Tome
+Saudi: comando não encontrado
+Senegal: comando não encontrado
+Serbia: comando não encontrado
+Seychelles: comando não encontrado
+Sierra: comando não encontrado
+Singapore: comando não encontrado
+Slovakia: comando não encontrado
+Slovenia: comando não encontrado
+Solomon: comando não encontrado
+Somalia: comando não encontrado
+South: comando não encontrado
+South: comando não encontrado
+Spain: comando não encontrado
+Comando 'Sri' não encontrado, você quis dizer:
+  comando 'iri' do snap iri (1.1.0)
+  comando 'ri' do snap ruby (3.1.2)
+  comando 'ri' do deb ruby (1:3.0~exp1)
+  comando 'yri' do deb yard (0.9.26-1)
+Veja 'snap info <snapname>' para versões adicionais.
+Sudan: comando não encontrado
+Suriname: comando não encontrado
+Swaziland: comando não encontrado
+Sweden: comando não encontrado
+Switzerland: comando não encontrado
+Syria: comando não encontrado
+Taiwan: comando não encontrado
+Tajikistan: comando não encontrado
+Tanzania: comando não encontrado
+Thailand: comando não encontrado
+Comando 'Togo' não encontrado, você quis dizer:
+  comando 'pogo' do snap pogo (v1.0.1)
+  comando 'logo' do deb qlogo (0.92+git.1.29a5ca2-2)
+  comando 'logo' do deb ucblogo (6.2.2-2)
+Veja 'snap info <snapname>' para versões adicionais.
+Tonga: comando não encontrado
+[2] 26942
+Tobago: comando não encontrado
+Trinidad: comando não encontrado
+Tunisia: comando não encontrado
+[2]-  Fim da execução com status 127        Trinidad
+Turkey: comando não encontrado
+Turkmenistan: comando não encontrado
+Tuvalu: comando não encontrado
+Uganda: comando não encontrado
+Ukraine: comando não encontrado
+United: comando não encontrado
+United: comando não encontrado
+United: comando não encontrado
+Uruguay: comando não encontrado
+Uzbekistan: comando não encontrado
+Vanuatu: comando não encontrado
+Vatican: comando não encontrado
+Venezuela: comando não encontrado
+Vietnam: comando não encontrado
+Yemen: comando não encontrado
+Zambia: comando não encontrado
+bash: Zimbabwerezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+Brazil: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+Brazil: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+Comando 'eja' não encontrado, mas poder ser instalado com:
+sudo apt install eja
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+countries.txt: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: :s^@Seja a mudança que você quer ver no mundo: substitution failed
+Posso: comando não encontrado
+Comando 'Para' não encontrado, você quis dizer:
+  comando 'para' do snap para (v0.4.0)
+  comando 'ara' do deb python3-ara (1.5.7-1)
+  comando 'yara' do deb yara (4.1.3-1build1)
+Veja 'snap info <snapname>' para versões adicionais.
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+countries.txt: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+Comando 'grep:' não encontrado, você quis dizer:
+  comando 'grep' do deb grep (3.7-1build1)
+Experimente: sudo apt install <deb name>
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+Comando 'grep:' não encontrado, você quis dizer:
+  comando 'grep' do deb grep (3.7-1build1)
+Experimente: sudo apt install <deb name>
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+39: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+5: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+countries.txt: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+^KComando 'total' não encontrado, você quis dizer:
+  comando 'topal' do deb topal (80-1build2)
+Experimente: sudo apt install <deb name>
+-rw-rw-r--: comando não encontrado
+-rw-rw-r--: comando não encontrado
+-rw-rw-r--: comando não encontrado
+-rw-rw-r--: comando não encontrado
+^A-rw-rw-r--: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+-rw-rw-r--: comando não encontrado
+-rw-rw-r--: comando não encontrado
+-rw-rw-r--: comando não encontrado
+bash: rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$: Arquivo ou diretório inexistente
+-rw-rw-r--: comando não encontrado
+^A-rw-rw-r--: comando não encontrado
+-rw-rw-r--: comando não encontrado
+rezende@rezende-System-Product-Name:~/unix_tests$ jobs
+[1]+  Parado                  Denmark
+rezende@rezende-System-Product-Name:~/unix_tests$ kill %1
+rezende@rezende-System-Product-Name:~/unix_tests$ jobs
+[1]+  Terminado               Denmark
+rezende@rezende-System-Product-Name:~/unix_tests$ sort < skills2.txt | head -n 3 > top_skills.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ ls
+countries.txt  empty.tbt    prashes      top_skills.txt
+empty.pdf      phrases.txt  skills2.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ cat phrases2.txt >> 
+bash: erro de sintaxe próximo ao token inesperado `newline'
+rezende@rezende-System-Product-Name:~/unix_tests$ cat >> p
+phrases.txt  prashes      
+rezende@rezende-System-Product-Name:~/unix_tests$ cat >> phrases2.txt 
+Aquele que nunca viu a tristeza, nunca reconhecerá a alegria.
+Cuidado com a tristeza. Ela é um vício.
+Triste época! É mais fácil desintegrar um átomo do que um preconceito.
+A vida não é triste. Tem horas tristes.
+rezende@rezende-System-Product-Name:~/unix_tests$ grep br phrases2.txt | wc -l
+0
+rezende@rezende-System-Product-Name:~/unix_tests$ grep -v br phrases2.txt | wc -l
+4
+rezende@rezende-System-Product-Name:~/unix_tests$ cat >> phrases2.txt 
+Holanda
+Jamaica
+rezende@rezende-System-Product-Name:~/unix_tests$ cat phrases2.txt 
+Aquele que nunca viu a tristeza, nunca reconhecerá a alegria.
+Cuidado com a tristeza. Ela é um vício.
+Triste época! É mais fácil desintegrar um átomo do que um preconceito.
+A vida não é triste. Tem horas tristes.
+Holanda
+Jamaica
+rezende@rezende-System-Product-Name:~/unix_tests$ cp phrases2.txt bunch_of_things.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ cat countries.txt >> bunch_of_things.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ sort bunch_of_things.txt -o bunch_of_things.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ ls -l
+total 24
+-rw-rw-r-- 1 rezende rezende 2081 jun  9 19:18 bunch_of_things.txt
+-rw-rw-r-- 1 rezende rezende 1842 jun  9 19:11 countries.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.pdf
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.tbt
+-rw-rw-r-- 1 rezende rezende  238 jun  9 19:17 phrases2.txt
+-rw-rw-r-- 1 rezende rezende  202 jun  9 15:15 phrases.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 19:12 prashes
+-rw-rw-r-- 1 rezende rezende   51 jun  9 19:06 skills2.txt
+-rw-rw-r-- 1 rezende rezende   14 jun  9 19:13 top_skills.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ chmod 777 bunch_of_things.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ ls -l
+total 24
+-rwxrwxrwx 1 rezende rezende 2081 jun  9 19:18 bunch_of_things.txt
+-rw-rw-r-- 1 rezende rezende 1842 jun  9 19:11 countries.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.pdf
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.tbt
+-rw-rw-r-- 1 rezende rezende  238 jun  9 19:17 phrases2.txt
+-rw-rw-r-- 1 rezende rezende  202 jun  9 15:15 phrases.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 19:12 prashes
+-rw-rw-r-- 1 rezende rezende   51 jun  9 19:06 skills2.txt
+-rw-rw-r-- 1 rezende rezende   14 jun  9 19:13 top_skills.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ chmod 555 bunch_of_things.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ ls -l
+total 24
+-r-xr-xr-x 1 rezende rezende 2081 jun  9 19:18 bunch_of_things.txt
+-rw-rw-r-- 1 rezende rezende 1842 jun  9 19:11 countries.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.pdf
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.tbt
+-rw-rw-r-- 1 rezende rezende  238 jun  9 19:17 phrases2.txt
+-rw-rw-r-- 1 rezende rezende  202 jun  9 15:15 phrases.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 19:12 prashes
+-rw-rw-r-- 1 rezende rezende   51 jun  9 19:06 skills2.txt
+-rw-rw-r-- 1 rezende rezende   14 jun  9 19:13 top_skills.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ chmod 644 bunch_of_things.txt 
+rezende@rezende-System-Product-Name:~/unix_tests$ ls -l
+total 24
+-rw-r--r-- 1 rezende rezende 2081 jun  9 19:18 bunch_of_things.txt
+-rw-rw-r-- 1 rezende rezende 1842 jun  9 19:11 countries.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.pdf
+-rw-rw-r-- 1 rezende rezende    0 jun  9 15:24 empty.tbt
+-rw-rw-r-- 1 rezende rezende  238 jun  9 19:17 phrases2.txt
+-rw-rw-r-- 1 rezende rezende  202 jun  9 15:15 phrases.txt
+-rw-rw-r-- 1 rezende rezende    0 jun  9 19:12 prashes
+-rw-rw-r-- 1 rezende rezende   51 jun  9 19:06 skills2.txt
+-rw-rw-r-- 1 rezende rezende   14 jun  9 19:13 top_skills.txt
+rezende@rezende-System-Product-Name:~/unix_tests$ jobs
+rezende@rezende-System-Product-Name:~/unix_tests$ jobs
+rezende@rezende-System-Product-Name:~/unix_tests$ ps
+    PID TTY          TIME CMD
+  10875 pts/0    00:00:01 bash
+  28139 pts/0    00:00:00 ps
+rezende@rezende-System-Product-Name:~/unix_tests$ sleep30&
+[1] 28140
+rezende@rezende-System-Product-Name:~/unix_tests$ sleep30: comando não encontrado
+sleep 30&
+[2] 28155
+[1]   Fim da execução com status 127        sleep30
+rezende@rezende-System-Product-Name:~/unix_tests$ ps
+    PID TTY          TIME CMD
+  10875 pts/0    00:00:01 bash
+  28155 pts/0    00:00:00 sleep
+  28156 pts/0    00:00:00 ps
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28155%
+bash: kill: 28155%: argumentos devem ser IDs de trabalhos ou processo
+[2]+  Concluído              sleep 30
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28115
+bash: kill: (28115) - Processo inexistente
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28115#
+bash: kill: 28115#: argumentos devem ser IDs de trabalhos ou processo
+rezende@rezende-System-Product-Name:~/unix_tests$ sleep 30
+^Z
+[1]+  Parado                  sleep 30
+rezende@rezende-System-Product-Name:~/unix_tests$ bg
+[1]+ sleep 30 &
+rezende@rezende-System-Product-Name:~/unix_tests$ sleep 300 &
+[2] 28165
+[1]   Concluído              sleep 30
+rezende@rezende-System-Product-Name:~/unix_tests$ sleep 200
+^Z
+[3]+  Parado                  sleep 200
+rezende@rezende-System-Product-Name:~/unix_tests$ sleep 100
+jobs
+
+^Z
+[4]+  Parado                  sleep 100
+rezende@rezende-System-Product-Name:~/unix_tests$ jobs
+[2]   Executando              sleep 300 &
+[3]-  Parado                  sleep 200
+[4]+  Parado                  sleep 100
+rezende@rezende-System-Product-Name:~/unix_tests$ fg 2%
+bash: fg: 2%: trabalho não existe
+rezende@rezende-System-Product-Name:~/unix_tests$ fg %2
+sleep 300
+^Z
+[2]+  Parado                  sleep 300
+rezende@rezende-System-Product-Name:~/unix_tests$ jobs
+[2]+  Parado                  sleep 300
+[3]   Parado                  sleep 200
+[4]-  Parado                  sleep 100
+rezende@rezende-System-Product-Name:~/unix_tests$ bg %3
+[3] sleep 200 &
+rezende@rezende-System-Product-Name:~/unix_tests$ ps
+    PID TTY          TIME CMD
+  10875 pts/0    00:00:01 bash
+  28165 pts/0    00:00:00 sleep
+  28166 pts/0    00:00:00 sleep
+  28167 pts/0    00:00:00 sleep
+  28180 pts/0    00:00:00 ps
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28165# ; kill 28166# ; kill 28167#
+bash: kill: 28165#: argumentos devem ser IDs de trabalhos ou processo
+bash: kill: 28166#: argumentos devem ser IDs de trabalhos ou processo
+bash: kill: 28167#: argumentos devem ser IDs de trabalhos ou processo
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28165 #
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28166 #
+rezende@rezende-System-Product-Name:~/unix_tests$ kill 28167 #
+[3]   Terminado               sleep 200
+rezende@rezende-System-Product-Name:~/unix_tests$ git branch
+fatal: not a git repository (or any of the parent directories): .git
+rezende@rezende-System-Product-Name:~/unix_tests$ 
+
+
