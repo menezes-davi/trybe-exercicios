@@ -1,0 +1,116 @@
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ mkdir unix_tests
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1$ cd unix_tests/
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ touch trybe_txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ rm trybe_txt 
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ touch trybe.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cp trybe.txt trybe_backup.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+trybe_backup.txt  trybe.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mv trybe.txt trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+trybe_backup.txt  trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mkdir backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mv trybe_backup.txt backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+backup  trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cd backup/trybe_backup.txt
+bash: cd: backup/trybe_backup.txt: Não é um diretório
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cd backup/
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ ls
+trybe_backup.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mkdir backup2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cd backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ mv trybe_backup.txt backup2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ ls
+backup2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ 
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+backup  backup2  trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cd backup2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup2$ ls
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup2$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cd backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ ls
+backup2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ mv backup2 trybe_backup.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ mv trybe_backup.txt ~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup2
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ ls
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests/backup$ cd ..
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ rmdir backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ mv backup2 backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+backup  trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ pwd
+/home/rezende/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ rmdir backup
+rmdir: falhou em remover 'backup': Diretório não vazio
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ rm -rf backup
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ touch skills.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cat >> skills.txt 
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+skills.txt  trybe_renamed.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cat skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ cat -5 skills.txt
+cat: opção inválida -- “5”
+Tente "cat --help" para mais informações.
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ head -5 skill.txt
+head: não foi possível abrir 'skill.txt' para leitura: Arquivo ou diretório inexistente
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ head skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ less skills.txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ head 5 skills.txt
+head: não foi possível abrir '5' para leitura: Arquivo ou diretório inexistente
+==> skills.txt <==
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ head -n 5 skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ tail -n 4 skills.txt
+JavaScript
+React
+SQL
+
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ rm *txt
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ ls
+rezende@rezende-System-Product-Name:~/trybe-exercicios/fundamentos/bloco-01-unix-e-bash/dia-03-unix-bash-parte1/unix_tests$ 
