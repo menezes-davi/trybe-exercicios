@@ -95,12 +95,15 @@
         }
         paraMaiusculo();
 
+        // Exercício 6
 
-
-
-
-
-
+        function mostraParagrafos(){
+            let p = document.getElementsByTagName('p');
+            for(let index = 0; index < p.length; index += 1){
+                console.log(p[index].innerHTML);
+            }
+        }
+        mostraParagrafos();
 
     </script>
   </body>
