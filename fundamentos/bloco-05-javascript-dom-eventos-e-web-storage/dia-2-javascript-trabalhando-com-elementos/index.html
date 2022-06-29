@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+
+      // Exercício 1
+        let tagH1 = document.createElement('h1');
+        tagh1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.body.appendChild(h1);
+
+      // Exercício 2
+        let tagMain = document.createElement('main');
+        tagMain.className = 'main-content';
+        document.body.appendChild(tagMain);
+
+      // Exercício 3
+        let tagSection = document.createElement('section');
+        tagSection.className = 'center-content';
+        tagMain.appendChild(tagSection);
+
+      // Exercício 4
+        let tagP = document.createElement('p');
+        tagP.innerHTML = 'getsuga tensho';
+        tagSection.appendChild(tagP);
+
+      // Exercício 5
+        let tagSection2 = document.createElement('section');
+        tagSection2.className = 'left-content';
+        tagMain.appendChild(tagSection2);
+
+      // Exercício 6
+        let tagSection3 = document.createElement('section');
+        tagSection3.className = 'right-content';
+        tagMain.appendChild(tagSection3);
+
+      // Exercício 7
+        let tagImg = document.createElement('img');
+        tagImg.className = 'small-image';
+        tagImg.src = 'https://picsum.photos/200';
+        tagSection2.appendChild(tagImg);
+
+      // Exercício 8
+        let lista = document.createElement('ul');
+        tagSection3.appendChild(lista);
+        
+        let numeros = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
+        for(let numero in numeros){
+            let listaLi = document.createElement('li');
+            listaLi.innerHTML = numeros[numero];
+            lista.appendChild(listaLi);
+        }
+
+      // Exercício 9
+        
+      for(let index = 0; index <  3; index += 1){
+        let tagH3 = document.createElement('h3');
+        tagH3.innerHTML = index;
+        elementMain.appendChild(tagH3);
+      } 
+
+      // PARTE 2
+
+      // Exercício 1
+      let title = document.querySelector('h1');
+      title.className = 'title';
+
+      // Exercício 2
+      let titulosH3 = document.getElementsByTagName('h3');
+      for(let index = 0; index < 3; index += 1){
+        titulosH3 [index].className = 'description';
+      }
+
+      // Exercício 3
+      let removeLeft = document.getElementsByClassName('left-content')[0];
+      tagMain.removeChild(removeLeft);
+
+      // Exercício 4
+      let centralizeRight = document.getElementsByClassName('right-content')[0];
+      centralizeRight.style.marginRight='auto';
+
+      // Exercício 5
+      let sectionCenter = document.getElementsByClassName('center-content')[0];
+      sectionCenter.parentNode.style.backgroundColor = 'green';
+
+      // Exercício 6
+      let removeNumeros = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+      
+    </script>
+  </body>
+</html>
