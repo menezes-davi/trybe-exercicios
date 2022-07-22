@@ -75,5 +75,5 @@ const books = [
   };
   
   function getNamedBook() {
-    books.find(book => book.name.length === 26);
+    return books.find(book => book.name.length === 26);
   }
