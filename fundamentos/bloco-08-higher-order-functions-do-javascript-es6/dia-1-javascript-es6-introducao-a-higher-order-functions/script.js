@@ -14,6 +14,7 @@
 
 console.log(newEmployees(createEmail));
    */
+  
 /* const sortitionResult = (number, func) => {
     const sortitionNumber = Math.floor((Math.random() * 5) + 1);
     return func(number, sortitionNumber) ? 'Tente novamente' : 'Parabéns você ganhou';
