@@ -1,15 +1,10 @@
-const alex = {
-    name: 'Alex',
-    age: 26,
-    likes: ['fly fishing'],
-    nationality: 'Australian',
+const yearSeasons = {
+    spring: ['March', 'April', 'May'],
+    summer: ['June', 'July', 'August'],
+    autumn: ['September', 'October', 'November'],
+    winter: ['December', 'January', 'February'],
   };
+
+  const { spring, summer, autumn, winter } = yearSeasons;
+  const months = [...spring, ...summer, ...autumn, ...winter];
   
-  const gunnar = {
-    name: 'Gunnar',
-    age: 30,
-    likes: ['hiking', 'scuba diving', 'taking pictures'],
-    nationality: 'Icelandic',
-  };
-  
-  // complete a assinatura da função abaixo
